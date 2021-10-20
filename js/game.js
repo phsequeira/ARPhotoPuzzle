@@ -58,6 +58,7 @@
                     image.src = URL.createObjectURL(img);
                     image.addEventListener('load', () => createImagePieces(image));
                     setInterval(() => checkDistance(), 1000);
+                    console.log(puzzle);
                 })
                 .catch((error) => {console.log('takePhoto() error', error)})
         };
