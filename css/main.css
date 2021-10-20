@@ -12,7 +12,7 @@ html {
   .takePhoto {
     z-index: 300;
     position: absolute;
-    bottom: 6rem;
+    bottom: 4rem;
     color: white;
     font-size: 2rem;
     padding: .5rem 2rem;
