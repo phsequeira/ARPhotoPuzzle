@@ -29,7 +29,7 @@ html {
     border: none;
     border-radius: 25px;
     background-color: blue;
-    bottom: 3rem;
+    bottom: 2rem;
   }
   .solved {
     display: none;
