@@ -2,25 +2,26 @@
 <html>
 <head>
     <title>AR Slider Puzzle</title>
-    <script src="https://aframe.io/release/1.0.4/aframe.min.js"></script>
+    <!-- A-Frame script -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <!-- AR.js script -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
     <button class='takePhoto'>Take Photo</button>
-    <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3'>
+    <a-scene embedded arjs='trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         <a-marker type='barcode' value='1'></a-marker>
         <a-marker type='barcode' value='2'></a-marker>
         <a-marker type='barcode' value='3'></a-marker>
-        <a-marker type='barcode' value='4'></a-marker>
         <a-marker type='barcode' value='5'></a-marker>
         <a-marker type='barcode' value='6'></a-marker>
         <a-marker type='barcode' value='7'></a-marker>
         <a-marker type='barcode' value='8'></a-marker>
         <a-marker type='barcode' value='9'></a-marker>
-        <a-marker type='barcode' value='10'></a-marker>
-        <a-marker type='barcode' value='11'></a-marker>
+        <!-- add A-Frame camera entity within Scene -->
         <a-entity camera></a-entity>
-    </a-scene>
+      </a-scene>
     <div class="solved">
         <a class="restart" href="./index.html">Restart</a>
     </div>
