@@ -20,7 +20,7 @@
                 .catch(error => console.log('enumerateDevices() error', error))
                 .then(getStream);
 
-                takePhotoButton.addEventListener(`click`, getPicture);
+                takePhotoButton.addEventListener("click", getPicture);
         }
 
         //Get a video stream from camera
